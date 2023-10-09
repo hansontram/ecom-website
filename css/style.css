@@ -1,46 +1,153 @@
 /* Flexbox defaults */
-.row{
-    display: flex;
+.row {
+  display: flex;
 }
-.column{
-    flex-direction: column;
+.column {
+  flex-direction: column;
 }
 
-/* Navigation */
+/* Navigation Section*/
 /* TODO: add cursor point effect, hover effect, link */
-nav{
-    background-color: antiquewhite;
-    border: 1px solid black;
-    justify-content: space-between;
-    padding: 1.25rem;
-
+nav {
+  /* background-color: antiquewhite; */
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  padding: 2rem;
 }
-nav div a{
-    text-decoration: none;
+nav div a {
+  text-decoration: none;
+}
+.link {
+  list-style-type: none;
 }
 .link + .link {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
-/* Hero */
-.hero-container{
-    border: 1px solid red;
-    min-width: 100%;
-    min-height: 85vh;
-    background-image: url(../images/anish-prajapati-a5H2klUokSo-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+/* Hero Section*/
+.hero-container {
+  border: 1px solid red;
+  min-width: 100%;
+  min-height: 85vh;
+  background-image: url(../images/anish-prajapati-a5H2klUokSo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-   justify-content: center;
-   align-items: center;
-    
+  justify-content: center;
+  align-items: center;
 }
-.hero-content h1{
-    font-weight: 700;
-   font-size: 2.8rem;
-   line-height: 125%;
-   text-align: center;
-   letter-spacing: -0.03em;
-   color: #FFF;
+.hero-content {
+  /* border: 1px solid red; */
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 125%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+/* Shop By Category Section */
+/* TODO: fix color matching of containers w/ img  */
+.category {
+  /* border: 1px solid rgb(7, 135, 30); */
+  margin: 1rem 0;
+}
+.category-container {
+  /* border: 1px solid orchid; */
+  align-items: center;
+}
+.category-img {
+  min-width: 100%;
+}
+
+.category-btn {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 180px;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+/* About Us Section */
+.about-container {
+  padding: 2rem;
+}
+
+/* Contact Form */
+
+/* TODO: auto grow text box  */
+
+.contact-container{
+    padding: 2rem;
+    /* border: 1px solid forestgreen; */
+}
+.contact-form {
+  /* margin: auto; */
+  /* padding: 10px 50px; */
+   /* min-width: 750px; */
+  /* box-sizing: border-box; */
+  /* border: 1px solid salmon; */
+ 
+}
+
+.contact-form h3 {
+  /* font-size: 24px; */
+  /* color: var(--headers); */
+  /* margin-left: 0px; */
+}
+
+.contact-form input {
+  /* font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding-left: 5px;
+  margin: 1rem 1rem;
+  width: 100%;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box; */
+  min-height: 3rem;
+  margin: 1.2rem 0;
+  padding: .7rem;
+  
+}
+
+.contact-form #message {
+    min-height: 8rem;
+    padding: .7rem;
+}
+
+.contact-form .submit-form {
+margin-top: 1.2rem;
+}
+
+/* Footer Section */
+.container{
+    padding: 1rem 2rem;
+    background-color: #2D2B2B;
+    color: #fff;
+}
+.footer-container{
+    justify-content: space-between;
+}
+.footer-container a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+.icons + .icons{
+    margin-left: .6rem;
+}
+.footer-bottom-content{
+    align-items: center;
+}
+.footer-bottom-content a{
+    color: white;
+   
 }
