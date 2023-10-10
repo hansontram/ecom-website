@@ -8,25 +8,39 @@
 
 /* Navigation Section*/
 /* TODO: add cursor point effect, hover effect, link */
+
+header {
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+}
 nav {
-  /* background-color: antiquewhite; */
-  /* border: 1px solid black; */
-  justify-content: space-between;
+  background-color: #fff;
   padding: 2rem;
 }
+
+.nav-container{
+    align-items: center;  
+
+}
+.logo, .nav-middle-links,.nav-right-links {
+text-align:center;
+}
+.nav-middle-links ul{
+    padding: 0;
+}
+
 nav div a {
   text-decoration: none;
 }
 .link {
   list-style-type: none;
-}
-.link + .link {
-  margin-left: 1rem;
+  margin-top: .5rem;
+
 }
 
 /* Hero Section*/
 .hero-container {
-  border: 1px solid red;
   min-width: 100%;
   min-height: 85vh;
   background-image: url(../images/anish-prajapati-a5H2klUokSo-unsplash.jpg);
@@ -38,7 +52,6 @@ nav div a {
   align-items: center;
 }
 .hero-content {
-  /* border: 1px solid red; */
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 125%;
@@ -83,17 +96,16 @@ nav div a {
 
 /* TODO: auto grow text box  */
 
-.contact-container{
-    padding: 2rem;
-    /* border: 1px solid forestgreen; */
+.contact-container {
+  padding: 2rem;
+  /* border: 1px solid forestgreen; */
 }
 .contact-form {
   /* margin: auto; */
   /* padding: 10px 50px; */
-   /* min-width: 750px; */
+  /* min-width: 750px; */
   /* box-sizing: border-box; */
   /* border: 1px solid salmon; */
- 
 }
 
 .contact-form h3 {
@@ -114,40 +126,150 @@ nav div a {
   box-sizing: border-box; */
   min-height: 3rem;
   margin: 1.2rem 0;
-  padding: .7rem;
-  
+  padding: 0.7rem;
 }
 
 .contact-form #message {
-    min-height: 8rem;
-    padding: .7rem;
+  min-height: 8rem;
+  padding: 0.7rem;
 }
 
 .contact-form .submit-form {
-margin-top: 1.2rem;
+  margin-top: 1.2rem;
 }
 
 /* Footer Section */
-.container{
-    padding: 1rem 2rem;
-    background-color: #2D2B2B;
-    color: #fff;
+.container {
+  padding: 1rem 2rem;
+  background-color: #2d2b2b;
+  color: #fff;
 }
-.footer-container{
+.footer-container {
+  justify-content: space-between;
+}
+.footer-container a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+}
+.icons + .icons {
+  margin-left: 0.6rem;
+}
+.footer-bottom-content {
+  align-items: center;
+}
+.footer-bottom-content a {
+  color: white;
+}
+
+
+
+/* Hamburger */
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #2d2b2b;
+  color: #2e323f;
+  transition: opacity 250ms ease;
+  margin-top: 0.6rem;
+  margin-left: 0.5rem;
+  position: absolute;
+  right:30px;
+  top: 12px;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav {
+  /* visibility: hidden; */
+  display: none;
+  height: 0;
+  position: absolute;
+}
+
+.nav--visible {
+  /* visibility: visible; */
+ display:flex;
+  height: auto; 
+  position: relative;
+}
+
+
+/* Responsive */
+
+@media (min-width: 900px) {
+    .nav-toggle {
+      display: none;
+    }
+  
+    .nav {
+      visibility: visible;
+      height: auto;
+    }
+}
+@media (min-width:901px){
+.nav{
+display: flex;
+
+}
+.nav-container{
+    flex-direction: row;
     justify-content: space-between;
 }
-.footer-container a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bolder;
+    /* .nav-container{
+       flex-direction: row;
+       justify-content: space-between;
+    }
+    .nav-middle-links ul{
+        display: flex;
+        flex-direction: row;
+border: 1px solid red;        
+    }
+    .nav-right-links{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .link + .link{
+        margin-left: .5rem;
+    }
+  */
+    
+
 }
-.icons + .icons{
-    margin-left: .6rem;
-}
-.footer-bottom-content{
-    align-items: center;
-}
-.footer-bottom-content a{
-    color: white;
-   
-}
+  

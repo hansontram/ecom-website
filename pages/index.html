@@ -20,24 +20,28 @@
   </head>
   <body>
     <header>
-      <nav class="row">
+      <nav class="nav-container row column">
         <div class="nav-logo">
           <a href="../pages/index.html">Maki&Co</a>
         </div>
-        <div class="nav-middle-links">
-          <ul class="row">
-          <li class="link"><a href="./index.html" >Home</a></li>
-          <li class="link"><a href="" >Shop</a></li>
-          <li class="link"><a href="#about" >About</a></li>
-          <li class="link"><a href="#contact" >Contact</a></li>
-        </ul>
+
+        <div class="nav-middle-links nav">
+          <ul >
+            <li class="link"><a href="./index.html">Home</a></li>
+            <li class="link"><a href="./shop.html">Shop</a></li>
+            <li class="link"><a href="#about">About</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+          </ul>
         </div>
 
-        <div class="nav-right-links">
+        <div class="nav-right-links nav column">
           <a href="" class="link">Register</a>
           <a href="" class="link">login</a>
           <a href="" class="link"><i class="fa-solid fa-bag-shopping"></i></a>
         </div>
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
       </nav>
     </header>
     <section class="hero-container row column">
@@ -105,7 +109,7 @@
         voluptatem, expedita ipsam?
       </p>
     </div>
-    <section class="contact-container " id="contact">
+    <section class="contact-container" id="contact">
       <h3>Contact Us</h3>
       <form action="" class="contact-form row column">
         <input type="email" name="email" placeholder="name@email.com" />
@@ -118,24 +122,37 @@
       </form>
     </section>
     <footer class="container">
-        <div class="footer-container row">
-            <div>
-                <a href="../pages/index.html">Maki&Co</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-facebook-f icons"></i>
-                <i class="fa-brands fa-twitter icons"></i>
-                <i class="fa-brands fa-instagram icons"></i>
-                <i class="fa-brands fa-pinterest-p icons"></i>
-            </div>
+      <div class="footer-container row">
+        <div>
+          <a href="../pages/index.html">Maki&Co</a>
         </div>
-        <div class="footer-bottom-content row column">
-            <p>
-                Created by <a href="https://github.com/hansontram" target="_blank" rel="noreferrer" aria-label="link text - new window">Hanson Tram</a>          
-            </p>
-            <a href="https://github.com/hansontram/ecom-website" target="_blank" rel="noreferrer" aria-label="link text - new window">Project Repo</a>
-
+        <div>
+          <i class="fa-brands fa-facebook-f icons"></i>
+          <i class="fa-brands fa-twitter icons"></i>
+          <i class="fa-brands fa-instagram icons"></i>
+          <i class="fa-brands fa-pinterest-p icons"></i>
         </div>
+      </div>
+      <div class="footer-bottom-content row column">
+        <p>
+          Created by
+          <a
+            href="https://github.com/hansontram"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="link text - new window"
+            >Hanson Tram</a
+          >
+        </p>
+        <a
+          href="https://github.com/hansontram/ecom-website"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="link text - new window"
+          >Project Repo</a
+        >
+      </div>
     </footer>
+    <script src="../scripts/main.js"></script>
   </body>
 </html>
