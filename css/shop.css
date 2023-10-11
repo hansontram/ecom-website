@@ -4,6 +4,9 @@ body{
 }
 .page-desc-container{
 padding: 1rem 3rem;
+margin-left: 2rem;
+min-width: 400px;
+max-width: 800px;
 }
 
 
@@ -17,12 +20,14 @@ padding: 1rem 3rem;
 .product-container{
 flex-wrap: wrap;
 justify-content: center;
+padding: 0 1rem;
+margin-top: 1.5rem;
 }
 
 .product-card{
     width: 40%;
     margin-left: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 3.5rem;
 }
 
 .product-img{
@@ -35,9 +40,35 @@ justify-content: center;
     text-decoration: none;
     color: #2e323f;
 }
+
+/* Responsive */
 @media (min-width: 900px) {
     
     .shop-fix{
         flex-direction: row;
     }
+    .page-desc-container{
+        margin-left: 2.8rem;
+    }
+    .product-container{
+        padding: 0 1rem;
+        
+    }
+    .product-card{
+        width: 20%;
+        margin-left: 0rem;
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .product-card + .product-card{
+        margin: 0rem .5rem;
+    }
+}
+@media (min-width: 1200px) {
+    
+    .page-desc-container{
+        margin-left: 3.8rem;
+    }
+
 }
