@@ -35,3 +35,9 @@ justify-content: center;
     text-decoration: none;
     color: #2e323f;
 }
+@media (min-width: 900px) {
+    
+    .shop-fix{
+        flex-direction: row;
+    }
+}
