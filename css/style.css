@@ -10,8 +10,8 @@
 /* TODO: add cursor point effect, hover effect, link */
 
 header {
-  position: fixed; 
-  top: 0; 
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 nav {
@@ -19,19 +19,19 @@ nav {
   padding: 2rem;
 }
 
-.nav-container{
-    align-items: center;  
-
+.nav-container {
+  align-items: center;
 }
-.nav-logo{
-    font-weight: 900;
+.nav-logo {
+  font-weight: 900;
 }
-.logo, .nav-middle-links,.nav-right-links {
-text-align:center;
+.logo,
+.link {
+  text-align: center;
 }
-.nav-middle-links ul{
-    padding: 0;
-    margin-top: .5rem;
+.nav-middle-links ul {
+  padding: 0;
+  margin-top: 0.5rem;
 }
 
 nav div a {
@@ -40,8 +40,7 @@ nav div a {
 }
 .link {
   list-style-type: none;
-  margin-top: .5rem;
-
+  margin-top: 0.5rem;
 }
 
 /* Hero Section*/
@@ -169,8 +168,6 @@ nav div a {
   color: white;
 }
 
-
-
 /* Hamburger */
 
 .nav-toggle {
@@ -186,7 +183,7 @@ nav div a {
   margin-top: 0.6rem;
   margin-left: 0.5rem;
   position: absolute;
-  right:30px;
+  right: 30px;
   top: 12px;
 }
 
@@ -231,52 +228,46 @@ nav div a {
 
 .nav--visible {
   /* visibility: visible; */
- display:flex;
-  height: auto; 
+  display: flex;
+  height: auto;
   position: relative;
 }
-
 
 /* Responsive */
 
 @media (min-width: 900px) {
-    .nav-toggle {
-      display: none;
-    }
-  
-    .nav {
-      visibility: visible;
-      height: auto;
-    }
-}
-@media (min-width:901px){
-.nav{
-display: flex;
+  .nav-toggle {
+    display: none;
+  }
 
-}
-.nav-container{
+  .nav {
+    visibility: visible;
+    height: auto;
+  }
+  .nav-container {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .nav-middle-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .nav-middle-links ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .nav-right-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .link + .link {
+    margin-left: 1rem;
+  }
+.toggle-row{
+    display: flex;
+    flex-direction: column;
 }
-    /* .nav-container{
-       flex-direction: row;
-       justify-content: space-between;
-    }
-    .nav-middle-links ul{
-        display: flex;
-        flex-direction: row;
-border: 1px solid red;        
-    }
-    .nav-right-links{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    .link + .link{
-        margin-left: .5rem;
-    }
-  */
-    
-
 }
-  
