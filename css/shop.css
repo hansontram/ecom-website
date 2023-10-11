@@ -1,6 +1,12 @@
 body{
     margin-top: 9rem;
+   
 }
+.page-desc-container{
+padding: 1rem 3rem;
+}
+
+
 .row {
     display: flex;
   }
@@ -23,5 +29,9 @@ justify-content: center;
     min-width: 100%;
 }
 .product-content{
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+.product-card a{
+    text-decoration: none;
+    color: #2e323f;
 }
