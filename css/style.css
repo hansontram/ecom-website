@@ -47,13 +47,15 @@ nav div a {
 .hero-container {
   min-width: 100%;
   min-height: 85vh;
-  background-image: url(../images/anish-prajapati-a5H2klUokSo-unsplash.jpg);
+  /* background-image: url(../images/anish-prajapati-a5H2klUokSo-unsplash.jpg); */
+  background-image: url(../images/golf.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 .hero-content {
   font-weight: 700;
@@ -64,16 +66,20 @@ nav div a {
   align-items: center;
   text-align: center;
 }
+.hero-btn button{
+  margin-top: 2rem;
+}
 
 /* Shop By Category Section */
 /* TODO: fix color matching of containers w/ img  */
 .category {
-  /* border: 1px solid rgb(7, 135, 30); */
-  margin: 1rem 0;
+  border: 1px solid rgb(7, 135, 30);
+  margin: 2rem 0 1rem 0;
 }
 .category-container {
   /* border: 1px solid orchid; */
   align-items: center;
+  padding: 0.5rem 1rem;
 }
 .category-img {
   min-width: 100%;
@@ -86,9 +92,9 @@ nav div a {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  min-width: 180px;
+  min-width: 130px;
   margin: 2rem 0;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 /* About Us Section */
@@ -237,6 +243,7 @@ nav div a {
 /* Responsive */
 
 @media (min-width: 900px) {
+  /* Navbar */
   .nav-toggle {
     display: none;
   }
@@ -267,8 +274,15 @@ nav div a {
   .link + .link {
     margin-left: 1rem;
   }
-/* .toggle-row{
+
+  /* Category */
+
+  .category{
     display: flex;
-    flex-direction: column;
-} */
+    flex-wrap: wrap;
+  }
+  .category-container{
+    width: 50%;
+    padding: 0rem 1rem ;
+  }
 }

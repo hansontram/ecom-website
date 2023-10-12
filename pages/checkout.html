@@ -21,6 +21,31 @@
   </head>
 
   <body>
+    <header>
+        <nav class="row nav-container column">
+          <div class="nav-logo">
+            <a href="../pages/index.html">Maki&Co</a>
+          </div>
+  
+          <div class="nav-middle-links nav ">
+            <ul class="">
+              <li class="link"><a href="./index.html">Home</a></li>
+              <li class="link"><a href="./shop.html">Shop</a></li>
+              <li class="link"><a href="#about">About</a></li>
+              <li class="link"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="nav-right-links nav column">
+            <a href="./register.html" class="link">Register</a>
+            <a href="./login.html" class="link">login</a>
+            <a href="./checkout.html" class="link"><i class="fa-solid fa-bag-shopping"></i></a>
+          </div>
+          <button class="nav-toggle" aria-label="open navigation">
+            <span class="hamburger"></span>
+          </button>
+        </nav>
+      </header>
     <div class="checkout-container">
       <div class="right-container">
         <div class="checkout-header">
@@ -46,6 +71,21 @@
                   </td>
                 </tr>
                 <!-- Product 2 -->
+                <tr class="product-tr">
+                  <td class="item-img-container">
+                    <img
+                      src="https://malbongolf.com/cdn/shop/files/M-8445-RED_1_1000x.jpg?v=1695152061"
+                      alt=""
+                    />
+                  </td>
+                  <td class="item-description">
+                    <span>Malbon X 686 Merino Pullover Jacket</span>
+                  </td>
+                  <td>
+                    <span class="item-price">$120</span>
+                  </td>
+                </tr>
+                <!-- Product 3 -->
                 <tr class="product-tr">
                   <td class="item-img-container">
                     <img
@@ -187,6 +227,7 @@
                 name="credit-card-num"
                 placeholder="Card Number"
                 required
+                maxlength="16"
                 type="text"
               />
             </div>
