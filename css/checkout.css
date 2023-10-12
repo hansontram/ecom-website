@@ -1,0 +1,112 @@
+.checkout-container {
+  padding: 5rem;
+
+}
+
+.item-img-container {
+  width: 30%;
+}
+
+/* Product table */
+.item-description {
+  padding: 0 1rem;
+}
+.item-description span {
+  display: flex;
+  justify-content: center;
+}
+
+/* Discount */
+.discount {
+  display: flex;
+  justify-content: center;
+}
+.discount input {
+  width: 60%;
+  padding: 1rem 0.5rem;
+  margin-right: 1rem;
+}
+.discount button {
+  width: 20%;
+  height: 60px;
+  padding: 0rem 0.5rem;
+  margin-left: 0.5rem;
+  background-color: rgb(146, 145, 145);
+  color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px transparent;
+}
+
+/* Receipt  */
+.receipt {
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+
+/* Shipping Info */
+.shipping-heading,
+.payment-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 0.8rem;
+}
+
+.payment-btn {
+  background-color: rgb(45, 43, 43);
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px transparent;
+  padding: 1rem;
+  width: 100%;
+  margin: 0.3rem 0;
+}
+.footer-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .checkout-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .left-container {
+    width: 45%;
+  }
+  .right-container {
+    width: 45%;
+    background-color: #e0e0e0;
+    padding: 1rem;
+  }
+  .receipt-container {
+    margin-top: 1rem;
+  }
+  .discount input {
+    height: 40px;
+  }
+  .discount button {
+    height: 40px;
+  }
+  .left-container input, .left-container button{
+max-width: 800px;
+  }
+}

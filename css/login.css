@@ -25,9 +25,12 @@ div > h3{
 .heading-container p {
     margin: 1rem 0 2rem 0 ;
 }
-div a{
-    text-decoration: none;
+div a {
     color:  #2e323f;;
+}
+.account-link{
+    text-decoration: none;
+   
 }
 
 .password, .email{

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/efdaf74e05.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Maki&Co</title>
+    <link rel="icon" href="../images/logo.webp" type="image/icon type" />
+  </head>
+
+  <body>
+    <div class="checkout-container">
+      <div class="right-container">
+        <div class="checkout-header">
+          <h3>Cart</h3>
+        </div>
+        <!-- <div class=""> -->
+          <div class="purchase-item-container">
+            <table>
+              <thead>
+                <!-- Product 1 -->
+                <tr class="product-tr">
+                  <td class="item-img-container">
+                    <img
+                      src="https://malbongolf.com/cdn/shop/files/M-8445-RED_1_1000x.jpg?v=1695152061"
+                      alt=""
+                    />
+                  </td>
+                  <td class="item-description">
+                    <span>Malbon X 686 Merino Pullover Jacket</span>
+                  </td>
+                  <td>
+                    <span class="item-price">$120</span>
+                  </td>
+                </tr>
+                <!-- Product 2 -->
+                <tr class="product-tr">
+                  <td class="item-img-container">
+                    <img
+                      src="https://malbongolf.com/cdn/shop/files/M-8445-RED_1_1000x.jpg?v=1695152061"
+                      alt=""
+                    />
+                  </td>
+                  <td class="item-description">
+                    <span>Malbon X 686 Merino Pullover Jacket</span>
+                  </td>
+                  <td>
+                    <span class="item-price">$120</span>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <br />
+          <!-- Discount  -->
+          <div class="discount">
+            <input type="text" name="discount" placeholder="Discount code" />
+            <button name="discount" type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <!-- Receipt Section -->
+          <table class="receipt">
+            <tbody>
+              <tr>
+                <td><span class="item-price">Subtotal</span></td>
+                <td class="right"><span class="item-price">$120</span></td>
+              </tr>
+              <tr>
+                <td><span class="item-price">Shipping</span></td>
+                <td class="right"><span class="item-price">Free</span></td>
+              </tr>
+              <tr>
+                <td><span class="item-price">Tax</span></td>
+                <td class="right"><span class="item-price">$7.59</span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th class="left"><span>Total</span></th>
+                <td class="right"><span>$253.65</span></td>
+              </tr>
+            </tfoot>
+          </table>
+        <!-- </div> -->
+      </div>
+      <div class="left-container">
+        <!-- Shipping Information -->
+        <div class="shipping-info">
+          <h3 class="shipping-heading">Shipping Information</h3>
+          <form
+            class="form-box"
+            enctype="text/plain"
+            method="get"
+            target="_blank"
+          >
+            <div>
+              <label for="name"></label>
+              <input
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+                type="text"
+              />
+            </div>
+
+            <div>
+              <label for="address"></label>
+              <input
+                id="address"
+                name="address"
+                placeholder="Address"
+                required
+                type="text"
+              />
+            </div>
+
+            <div class="city">
+              <label for="city"></label>
+              <input
+                id="city"
+                name="city"
+                placeholder="City"
+                required
+                type="text"
+              />
+            </div>
+            <div class="state">
+              <label for="state"></label>
+              <input
+                id="state"
+                name="state"
+                placeholder="State"
+                required
+                type="text"
+              />
+            </div>
+            <div class="zip">
+              <label for="zip"></label>
+              <input
+                id="zip"
+                name="zip"
+                placeholder="Zip Code"
+                required
+                type="text"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- Payment Information -->
+        <div class="payment-info">
+          <h3 class="payment-heading">Payment Information</h3>
+          <form
+            class="form-box"
+            enctype="text/plain"
+            method="get"
+            target="_blank"
+          >
+            <div>
+              <label for="name"></label>
+              <input
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+                type="text"
+              />
+            </div>
+
+            <div>
+              <label for="credit-card-num"></label>
+              <input
+                id="credit-card-num"
+                name="credit-card-num"
+                placeholder="Card Number"
+                required
+                type="text"
+              />
+            </div>
+
+            <div>
+              <div class="card-experation">
+                <label for="expiration"></label>
+                <input
+                  id="expiration"
+                  name="expiration"
+                  placeholder="Expiration Date (MM/YY)"
+                  required
+                  type="text"
+                />
+              </div>
+            </div>
+
+            <button class="payment-btn">
+              <i <i class="fa-solid fa-bag-shopping"></i> Pay now
+            </button>
+          </form>
+
+          <p class="footer-text">
+            <i class="fa-solid fa-lock"></i>
+            Your credit card information is encrypted
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
