@@ -1,33 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <div class="image-container">
-            <img src="https://malbongolf.com/cdn/shop/files/M-8445-RED_1_1000x.jpg?v=1695152061" alt="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/product.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          src="https://kit.fontawesome.com/efdaf74e05.js"
+          crossorigin="anonymous"
+        ></script>
+        <title>Maki&Co</title>
+        <link rel="icon" href="../images/logo.webp" type="image/icon type">
+      </head>
+  <body>
+    <header>
+        <nav class="row nav-container column">
+          <div class="nav-logo">
+            <a href="../pages/index.html">Maki&Co</a>
+          </div>
+  
+          <div class="nav-middle-links nav ">
+            <ul class="">
+              <li class="link"><a href="../index.html">Home</a></li>
+              <li class="link"><a href="../shop.html">Shop</a></li>
+              <li class="link"><a href="../index.html#about">About</a></li>
+              <li class="link"><a href="../index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="nav-right-links nav column">
+            <a href="../register.html" class="link">Register</a>
+            <a href="../login.html" class="link">login</a>
+            <a href="" class="link"><i class="fa-solid fa-bag-shopping"></i></a>
+          </div>
+          <button class="nav-toggle" aria-label="open navigation">
+            <span class="hamburger"></span>
+          </button>
+        </nav>
+      </header>
+    <div class="item-container">
+      <!-- <div class="image-container"> -->
+        <div class="product-img-container">
+
+            <img
+              src="https://malbongolf.com/cdn/shop/files/M-8445-RED_1_1000x.jpg?v=1695152061" 
+              alt="" class="product-img"
+            />
         </div>
-        <div class="info-container">
-            <div class="heading-info">
-                <h1>Product 1 Shirt By Taylor Made</h1>
-                <span>$100</span>
-            </div>
-            <div class="size-container">
-<form action="">
-    <label for="size">Select a size</label>
-    <select name="size" id="size">
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-    <option value="xlarge">X-large</option>
-</select>
-<input type="submit">
-</form>
-            </div>
+      <!-- </div> -->
+      <div class="info-container">
+        <div class="heading-info">
+          <h1>Product 1 Shirt By Taylor Made</h1>
+          <span class="item-price">$100</span>
         </div>
+        <div class="size-container">
+          <form class="size-select">
+            <label for="size">Select a size</label>
+            <select name="size" id="size" >
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="xlarge">X-large</option>
+            </select>
+            
+            <input type="button" value="Add to Cart" class="add-cart-btn"/>
+        </form>
+        </div>
+        <div class="about-item-container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae dignissimos laboriosam facilis ipsum sunt nam voluptatibus quod quia repudiandae fugit saepe eius quam molestiae beatae, ducimus, nostrum unde? Iusto, perspiciatis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae dignissimos laboriosam facilis ipsum sunt nam voluptatibus quod quia repudiandae fugit saepe eius quam molestiae beatae, ducimus, nostrum unde? Iusto, perspiciatis?</p>
+        </div>
+      </div>
     </div>
-</body>
+    <footer class="container">
+        <div class="footer-container row">
+          <div>
+            <a href="../index.html">Maki&Co</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-facebook-f icons"></i>
+            <i class="fa-brands fa-twitter icons"></i>
+            <i class="fa-brands fa-instagram icons"></i>
+            <i class="fa-brands fa-pinterest-p icons"></i>
+          </div>
+        </div>
+        <div class="footer-bottom-content row column">
+          <p>
+            Created by
+            <a
+              href="https://github.com/hansontram"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="link text - new window"
+              >Hanson Tram</a
+            >
+          </p>
+          <a
+            href="https://github.com/hansontram/ecom-website"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="link text - new window"
+            >Project Repo</a
+          >
+        </div>
+      </footer>
+    <script src="../../scripts/main.js"></script>
+  </body>
 </html>
