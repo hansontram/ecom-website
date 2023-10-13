@@ -43,7 +43,13 @@ form{
     text-decoration: none;
     text-align: center;
     padding: .5rem;
+    cursor: pointer;
 }
+.add-cart-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    text-decoration: underline;
+  }
+  
 @media (min-width: 900px) {
     .item-container{
         display: flex;
