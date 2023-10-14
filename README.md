@@ -1,6 +1,6 @@
 # E-Commerce Website
 
-This website was designed and built for an e-commerce store selling golf streetwear apparel using HTML, CSS, & Javascript.
+This website was designed and built for an e-commerce store selling golf streetwear apparel using HTML, CSS, & Javascript. All pages are responsive with the implementation of media queries. 
 
 #### 🔗 [ Maki&Co]()
 <img src="./images/shop.png"  />
@@ -53,3 +53,9 @@ git clone : https://github.com/hansontram/ecom-website.git
 ##### 3. Open in browser:
 
 - Then open index.html in your browser or run live server extension to view the website
+
+### Lessons learned
+- Working with different input types
+- Implementing html tables
+- More practice with flexbox
+- Creating a responsive website using media queries
