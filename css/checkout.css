@@ -82,6 +82,10 @@ input {
   background: rgba(0, 0, 0, 0.9);
   text-decoration: underline;
 }
+.pay-now-link{
+  color: #f9f9f9;
+  text-decoration: none;
+}
 .footer-text {
   margin-top: 1rem;
   font-size: 0.9rem;
