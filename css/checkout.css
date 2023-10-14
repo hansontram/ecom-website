@@ -78,6 +78,10 @@ input {
   width: 100%;
   margin: 0.3rem 0;
 }
+.payment-btn:hover, .discount button:hover {
+  background: rgba(0, 0, 0, 0.9);
+  text-decoration: underline;
+}
 .footer-text {
   margin-top: 1rem;
   font-size: 0.9rem;
