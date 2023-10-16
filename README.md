@@ -4,7 +4,7 @@ This website was designed and built for an e-commerce store selling golf streetw
 
 
 **Link to project:** https://makiapparel.netlify.app/
-<img src="./images/shop.png"  />
+<img src="./images/checkout.png"  />
 
 ### Features:
 
