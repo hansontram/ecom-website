@@ -2,7 +2,7 @@
 
 This website was designed and built for an e-commerce store selling golf streetwear apparel using HTML, CSS, & Javascript. All pages are responsive with the implementation of media queries. 
 
-#### 🔗 [ Maki&Co]()
+#### 🔗 [ Maki&Co](makiapparel.netlify.app)
 <img src="./images/shop.png"  />
 
 ### Features:
